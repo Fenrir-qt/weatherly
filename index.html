@@ -8,19 +8,19 @@
     <title>Weatherly</title>
 </head>
 
-<body>
-    <div class="flex flex-col items-center justify-center h-screen bg-zinc-200">
-        <div class="form-container bg-zinc-400 w-full max-w-80 p-2 rounded-lg">
+<body class="bg-[url('../assets/background.png')] bg-cover">
+    <div class="flex flex-col items-center justify-center h-screen">
+        <div class="form-container bg-gradient-to-br from-sky-600 to-sky-800 w-full max-w-80 md:max-w-lg lg:max-w-lg p-2 rounded-lg">
             <form id="searchForm" class="p-3">
-                <h1 class="text-center text-2xl mt-1 font-bold">
+                <h1 class="text-center text-4xl text-white mt-1 mb-4 font-bold">
                     Weatherly
                 </h1>
                 <input id="searchInput" type="text" placeholder="Enter location" class="block mx-auto bg-slate-100 p-2 mt-2 rounded-md focus:outline-blue-300 w-full ">
-                <button id="searchBtn" class="block mx-auto mt-3 p-2 rounded-md bg-emerald-400 cursor-pointer hover:bg-emerald-600 w-full" type="submit">Search</button>
+                <button id="searchBtn" class="block mx-auto mt-3 p-2 rounded-md bg-sky-400 cursor-pointer hover:bg-sky-600 text-white font-bold w-full" type="submit">Search</button>
             </form>
         </div>
         <!-- This part will be the display of data -->
-        <div id="weatherCard" class="mt-5 p-3 w-full max-w-80 rounded-xl shadow-xl bg-emerald-200 hidden min-w-0">
+        <div id="weatherCard" class="mt-5 p-3 w-full max-w-80 md:max-w-lg lg:max-w-lg rounded-xl shadow-xl bg-slate-200 hidden min-w-0">
             <h2 id="location" class="text-2xl text-center font-bold mt-1"></h2>
             <span id="temp" class="text-7xl text-center font-bold block mt-8"></span>
             <span id="weather" class="text-xl text-center block mt-8"></span>
