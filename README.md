@@ -55,15 +55,14 @@ npx tailwindcss -i ./css/style.css -o ./css/output.css --watch
 ## Project Structure
 
 ```
-frontend/
-  index.html
-  css/
-    style.css
-    output.css
-  script/
-    script.js
+index.html
+css/
+ style.css
+ output.css
+script/
+ script.js
 api/
-  weather.js        # Vercel serverless function (API route)
+ weather.js        # Vercel serverless function (API route)
 tailwind.config.js
 ```
 
